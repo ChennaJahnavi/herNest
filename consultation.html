@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation - HerNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">♀</span>
+                <span class="logo-text">HerNest</span>
+            </a>
+            <div class="nav-links">
+                <a href="tracker.html" class="nav-link">My Cycle Tracker</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="consultation.html" class="nav-link">Consultation</a>
+                <a href="subscription.html" class="nav-link">Manage Subscription</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+            </div>
+            <button class="nav-cta-btn" id="auth-btn">Try HerNest Today</button>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-hero">
+            <h1>Consultation</h1>
+            <p class="about-subtitle">Connect with certified healthcare professionals</p>
+        </div>
+
+        <div class="about-section">
+            <p class="about-text">
+                Schedule online consultations with certified doctors, OB/GYNs, and women's health specialists. 
+                Get trusted, professional advice from the privacy and comfort of your home.
+            </p>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal" id="auth-modal">
+        <div class="auth-modal-content">
+            <button class="auth-close-btn" id="auth-close-btn">&times;</button>
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <span class="logo-icon">♀</span>
+                    <span class="logo-text">HerNest</span>
+                </div>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="login-tab">Log in</button>
+                <button class="auth-tab" id="signup-tab">Sign up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form-container" id="login-form-container">
+                <form class="auth-form" id="login-form">
+                    <div class="auth-input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="auth-options">
+                        <label class="auth-checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="auth-link">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Log in</button>
+                </form>
+            </div>
+            
+            <!-- Signup Form -->
+            <div class="auth-form-container" id="signup-form-container" style="display: none;">
+                <form class="auth-form" id="signup-form">
+                    <div class="auth-input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="auth-checkbox-group">
+                        <label class="auth-checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerNest - Your Home for Holistic Women's Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">♀</span>
+                <span class="logo-text">HerNest</span>
+            </a>
+            <div class="nav-links">
+                <a href="tracker.html" class="nav-link">My Cycle Tracker</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="consultation.html" class="nav-link">Consultation</a>
+                <a href="subscription.html" class="nav-link">Manage Subscription</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+            </div>
+            <button class="nav-cta-btn" id="auth-btn">Try HerNest Today</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="stars">★★★★★</span>
+                <span class="badge-text">Trusted by millions of women</span>
+            </div>
+            <h1 class="hero-title">Your Health Journey,<br>Supported Every Step</h1>
+            <p class="hero-description">
+                Track your cycle, connect with your community, and access expert care—all in one safe, supportive space designed for you.
+            </p>
+            <div class="hero-cta">
+                <button class="hero-btn-primary" id="hero-cta-btn">Get Started Free</button>
+                <button class="hero-btn-secondary">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="mockup-header"></div>
+                    <div class="mockup-calendar"></div>
+                    <div class="mockup-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title">Everything You Need in One Place</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Cycle Tracking</h3>
+                <p>Log symptoms, track patterns, and understand your body's unique rhythm.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Community Support</h3>
+                <p>Connect with women who understand your journey in safe, private forums.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👩‍⚕️</div>
+                <h3>Expert Consultations</h3>
+                <p>Access certified doctors and women's health specialists from home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join thousands of women who trust HerNest for their health and wellness.</p>
+            <button class="cta-button" id="cta-auth-btn">Try HerNest Today</button>
+        </div>
+    </section>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal" id="auth-modal">
+        <div class="auth-modal-content">
+            <button class="auth-close-btn" id="auth-close-btn">&times;</button>
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <span class="logo-icon">♀</span>
+                    <span class="logo-text">HerNest</span>
+                </div>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="login-tab">Log in</button>
+                <button class="auth-tab" id="signup-tab">Sign up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form-container" id="login-form-container">
+                <form class="auth-form" id="login-form">
+                    <div class="auth-input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="auth-options">
+                        <label class="auth-checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="auth-link">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Log in</button>
+                </form>
+            </div>
+            
+            <!-- Signup Form -->
+            <div class="auth-form-container" id="signup-form-container" style="display: none;">
+                <form class="auth-form" id="signup-form">
+                    <div class="auth-input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="auth-input-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="auth-checkbox-group">
+                        <label class="auth-checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
